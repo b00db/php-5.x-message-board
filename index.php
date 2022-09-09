@@ -38,9 +38,8 @@
                                     <tr>
                                         <td width='100%' height='50' align='center' bgcolor='#FFFFFF'>&nbsp;</td>
                                         <?
-                                        $connect = mysql_connect('localhost', 'boo', '0000');
-                                        mysql_select_db('boo', $connect);
-                                        if (!$connect) die('데이터를 불러올 수 없습니다.' . mysql_error());
+                                        include ('./lib/db_connect.php');
+                                        $connect = dbConnect();
 
                                         // 데이터 조회
                                         $query ="SELECT * FROM `board` WHERE `id`='test'";

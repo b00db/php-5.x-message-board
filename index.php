@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,13 +11,13 @@
             <td width='100%' height='80' align='center'>
                 <table border='0' width='100%' height='100%' align='center' cellspacing='0' cellpadding='0'>
                     <tr>
-                        <td width='100%' height='50' align='center' bgcolor='#3B9BF2'>
+                        <td width='100%' height='70' align='center' bgcolor='#3B9BF2'>
                             <font color='#FFFFFF'><strong>안녕하세요. 반갑습니다.</strong></font>
                         </td>
                         <tr>
-                            <td width='100%' height='50' align='center'>&nbsp; <!-- 여백 --></td>
+                            <td width='100%' height='50' align='right'><a href='./member/join.php'><strong>[회원가입]</strong></a> &nbsp; &nbsp;</td>
                             <tr>
-                                <td width='100%' height='30' align='center' bgcolor='#EDEDED'>메시지를 입력해주세요.</td>                                
+                                <td width='100%' height='50' align='center' bgcolor='#EDEDED'>메시지를 입력해주세요.</td>                                
                                 <tr>
                                     <td width='100%' height='50' align='center'>&nbsp; <!-- 여백 --></td>
                                     <tr>

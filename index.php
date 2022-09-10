@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MESSAGE BOARD</title>
 </head>
 <body>
@@ -15,7 +16,10 @@
                             <font color='#FFFFFF'><strong>안녕하세요. 반갑습니다.</strong></font>
                         </td>
                         <tr>
-                            <td width='100%' height='50' align='right'><a href='./member/join.php'><strong>[회원가입]</strong></a> &nbsp; &nbsp;</td>
+                            <td width='100%' height='50' align='right'>
+                                <a href='./member/join.php'><strong>[회원가입]</strong></a> &nbsp; &nbsp; &nbsp;
+                                <a href='./member/login.php'><strong>[로그인]</strong></a> &nbsp; &nbsp;
+                            </td>
                             <tr>
                                 <td width='100%' height='50' align='center' bgcolor='#EDEDED'>메시지를 입력해주세요.</td>                                
                                 <tr>

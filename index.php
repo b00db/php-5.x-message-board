@@ -1,3 +1,9 @@
+<?
+error_reporting(E_ALL & ~E_NOTICE);
+include ('./lib/db_connect.php');
+$connect = Connect();
+$member = Member();
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -17,8 +23,20 @@
                         </td>
                         <tr>
                             <td width='100%' height='50' align='right'>
+                                <?
+                                if ($member[user_id]):
+                                    echo $member[user_name] . '(' . $member[nickname] . ') 님 환영합니다.';
+                                ?>
+                                &nbsp; &nbsp; &nbsp;
+                                <a href='./member/logout.php'><strong>[로그아웃]</strong></a> &nbsp; &nbsp;
+                                <?
+                                else:
+                                ?>
                                 <a href='./member/join.php'><strong>[회원가입]</strong></a> &nbsp; &nbsp; &nbsp;
                                 <a href='./member/login.php'><strong>[로그인]</strong></a> &nbsp; &nbsp;
+                                <?
+                                endif;
+                                ?>
                             </td>
                             <tr>
                                 <td width='100%' height='50' align='center' bgcolor='#EDEDED'>메시지를 입력해주세요.</td>                                
@@ -42,14 +60,10 @@
                                     <tr>
                                         <td width='100%' height='50' align='center' bgcolor='#FFFFFF'>&nbsp;</td>
                                         <?
-                                        include ('./lib/db_connect.php');
-                                        $connect = dbConnect();
-
                                         // 데이터 조회
                                         $query ="SELECT * FROM `board` WHERE `id`='test'";
-                                        mysql_query('set names utf8', $connect);
-                                        $result = mysql_query($query, $connect);
-                                        while ($data = mysql_fetch_array($result)) {
+                                        $result = mysqli_query($connect, $query);
+                                        while ($data = mysqli_fetch_array($result)) {
 
                                             $date_Y = substr($data['regdate'], 0, 4);  // 년
                                             $date_m = substr($data['regdate'], 4, 2);  // 월

@@ -1,7 +1,7 @@
 <?
 header('content-type:text/html; charset=UTF-8');
 include ('../lib/db_connect.php');
-$connect = dbConnect();
+$connect = Connect();
 
 $id = $_POST[id];
 $user_id = $_POST[user_id];
@@ -24,9 +24,8 @@ $ip = getenv('REMOTE_ADDR');  // ip
 // 데이터 저장
 $query = "INSERT INTO `member`(`id`, `user_id`, `user_name`, `nickname`, `birth`, `sex`, `tel`, `email`, `user_pw`, `addr1`, `addr2`, `regdate`, `ip`) ";
 $query .= "VALUES('$id', '$user_id', '$user_name', '$nickname', '$birth', '$sex', '$tel', '$email', '$pw', '$addr1', '$addr2', '$regdate', '$ip')";
-mysql_query('set names utf8', $connect);
-mysql_query($query, $connect);
-mysql_close();
+mysqli_query($connect, $query);
+mysqli_close();
 ?>
 
 <script>

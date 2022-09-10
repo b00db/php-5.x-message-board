@@ -15,13 +15,15 @@ $user_pw = $_POST[user_pw];
 $addr1 = $_POST[addr1];
 $addr2 = $_POST[addr2];
 
+$pw = md5($user_pw);  // 비밀번호 암호화
+
 date_default_timezone_set('Asia/Seoul');
 $regdate = date('YmdHis', time());  // 날짜, 시간
-$ip = getenv('REMOTE_ADDR');  //ip
+$ip = getenv('REMOTE_ADDR');  // ip
 
 // 데이터 저장
 $query = "INSERT INTO `member`(`id`, `user_id`, `user_name`, `nickname`, `birth`, `sex`, `tel`, `email`, `user_pw`, `addr1`, `addr2`, `regdate`, `ip`) ";
-$query .= "VALUES('$id', '$user_id', '$user_name', '$nickname', '$birth', '$sex', '$tel', '$email', '$user_pw', '$addr1', '$addr2', '$regdate', '$ip')";
+$query .= "VALUES('$id', '$user_id', '$user_name', '$nickname', '$birth', '$sex', '$tel', '$email', '$pw', '$addr1', '$addr2', '$regdate', '$ip')";
 mysql_query('set names utf8', $connect);
 mysql_query($query, $connect);
 mysql_close();

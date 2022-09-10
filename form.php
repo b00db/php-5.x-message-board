@@ -11,8 +11,8 @@ $memo = $_POST[memo];
 
 date_default_timezone_set('Asia/Seoul');
 $regdate = date('YmdHis', time());  // 날짜, 시간
-$ip = getenv('REMOTE_ADDR');  //ip
-
+$ip = getenv('REMOTE_ADDR');  // ip
+ 
 // 데이터 저장
 $query = "INSERT INTO `board`(`id`, `user_id`, `user_name`, `user_pw`, `memo`, `regdate`, `ip`) ";
 $query .= "VALUES('$id', '$user_id', '$user_name', '$user_pw', '$memo', '$regdate', '$ip')";

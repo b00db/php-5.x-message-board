@@ -21,7 +21,7 @@
                 </td>
             </tr>
             <tr>
-                <form action='' name='login' method='post'>
+                <form action='./form_login.php' name='login' method='post'>
                     <td width='100%' height='200' align='left'>
                         <li>아이디: <input type='text' name='user_id' size='10'></li>
                         <br>

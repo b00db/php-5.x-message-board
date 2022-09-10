@@ -11,4 +11,14 @@ function dbConnect() {
     if (!$connect) die('연결에 실패하였습니다.' . mysql_error());
     return  $connect;
 }
+
+function Error($msg) {
+    echo "
+        <script>
+        window.alert('$msg');
+        history.back(1);
+        </script>
+    ";
+    exit;  // 첫 번째 메세지만 띄우기
+}
 ?>

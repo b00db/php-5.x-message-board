@@ -25,15 +25,15 @@
                     <td width='100%' height=300' align='left' valign='top'>
                         <input type='hidden' name='id' value='test'>
                         <br>
-                        <li>아이디: <input type='text' name='user_id' size='10'></li>
+                        <li>아이디: <input type='text' name='user_id' size='10'>&nbsp; &nbsp; &nbsp; 비밀번호: <input type='password' name='user_pw' size='10'></li>
                         <br>
                         <li>이름: <input type='text' name='user_name' size='10'>&nbsp; &nbsp; &nbsp; 닉네임: <input type='text' name='nickname' size='10'></li>
                         <br>
-                        <li>생년월일: <input type='text' name='user_id' size='10'>&nbsp; &nbsp; &nbsp; 
+                        <li>생년월일: <input type='text' name='birth' size='10'>&nbsp; &nbsp; &nbsp; 
                             성별: <input type='radio' name='sex' value='male'>남자 &nbsp; <input type='radio' name='sex' value='female'>여자
                         </li>
                         <br>
-                        <li>연락처: <input type='text' name='tel' size='10'> &nbsp; &nbsp; 이메일: <input type='text' name'email' size='10'></li>
+                        <li>연락처: <input type='text' name='tel' size='10'> &nbsp; &nbsp; 이메일: <input type='text' name='email' size='10'></li>
                         <br>
                         <li>주소: <input type='text' name='addr1' size='15'> &nbsp; &nbsp; 상세주소: <input type='text' name='addr2' size='15'></li>
                         <br>

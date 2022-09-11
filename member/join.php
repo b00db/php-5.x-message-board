@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type='text/css' href='../lib/style.css' rel='stylesheet'>
     <title>회원가입</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
                 &nbsp; &nbsp; <a href='../index.php'><strong>[홈]</strong></a>
             </td>
         </tr>
-        <table border='0' width='600' height='100%' bgcolor='#EEEEEE' align='center' cellspacing='0' cellpadding='0'>
+        <table border='0' width='650' height='100%' bgcolor='#EEEEEE' align='center' cellspacing='0' cellpadding='0'>
             <td width='100%' height='50' align='center' bgcolor='#FFFFFF'>&nbsp; <!-- 여백 --></td>
             <tr>
                 <td width='100%' height='80' align='center'>

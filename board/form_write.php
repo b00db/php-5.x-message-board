@@ -22,5 +22,5 @@ mysql_close();
 
 <script>
 window.alert('메세지가 정상적으로 등록되었습니다.');
-location.href='./index.php';
+location.href='./list.php';
 </script>

@@ -15,9 +15,13 @@ a:visited {
 }  /* 방문한 적이 있는 상태 */
 a:active {
     font-size: 12pt;
-    color: #00ACB3;
+    color: #3A389E;
 }  /* 클릭되는 순간 */
 a:hover {
     font-size: 12pt;
-    color: #00ACB3;
+    color: #3A389E;
 }  /* 마우스 올리면 */
+
+li {
+    list-style: none;
+}

@@ -11,7 +11,7 @@
     <table border='0' cellspacing='0' cellpadding='0' width='100%' height='100%' align='center' valign='top'>
         <tr>
             <td width='100%' height='70' align='left' valign='middle' bgcolor='#3B9BF2'>
-                &nbsp; &nbsp; <a href='../index.php'><strong>[홈]</strong></a>
+                &nbsp; &nbsp; <a href='../index.php'><font color='#FFFFFF'><strong>[홈]</strong></font></a>
             </td>
         </tr>
         <table border='0' width='650' height='100%' bgcolor='#EEEEEE' align='center' cellspacing='0' cellpadding='0'>

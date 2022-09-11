@@ -3,6 +3,10 @@ error_reporting(E_ALL & ~E_NOTICE);
 include ('../lib/db_connect.php');
 $connect = Connect();
 $member = Member();
+
+if (!$member[user_id]) {
+    Error('로그인 후 이용해주세요.');
+}
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -49,7 +53,7 @@ $member = Member();
                                     <li>이름</li>
                                 </td>
                                 <td width='80%' height='30' align='left' valign='middle' bgcolor='#FFFFFF'>
-                                    &nbsp; <input type='text' name='user_id' size='15' value='<?=$member[user_name]?>' readonly='readonly'>
+                                    &nbsp; <input type='text' name='user_name' size='15' value='<?=$member[user_name]?>' readonly='readonly'>
                                     &nbsp; &nbsp; &nbsp;
                                     닉네임: <input type='text' name='nickname' size='15' value='<?=$member[nickname]?>' readonly='readonly'>
                                 </td>
@@ -67,7 +71,7 @@ $member = Member();
                                     <li>내용</li>
                                 </td>
                                 <td width='80%' height='420' align='left' valign='middle' colspan='2' bgcolor='#FFFFFF'>
-                                    &nbsp; <textarea name='title' style='width:100%; height:400px;'></textarea>
+                                    &nbsp; <textarea name='content' style='width:100%; height:400px;'></textarea>
                                 </td>
                             </tr>
                             <tr>

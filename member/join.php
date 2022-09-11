@@ -28,7 +28,7 @@
                         <br>
                         <li>아이디: <input type='text' name='user_id' size='10'>&nbsp; &nbsp; &nbsp; 비밀번호: <input type='password' name='user_pw' size='10'></li>
                         <br>
-                        <li>이름: <input type='text' name='user_name' size='10'>&nbsp; &nbsp; &nbsp; 닉네임: <input type='text' name='nickname' size='10'></li>
+                        <li>이름: <input type='text' name='user_name' size='10'>&nbsp; &nbsp; &nbsp; 별명: <input type='text' name='nickname' size='10'></li>
                         <br>
                         <li>생년월일: <input type='text' name='birth' size='10'>&nbsp; &nbsp; &nbsp; 
                             성별: <input type='radio' name='sex' value='male'>남자 &nbsp; <input type='radio' name='sex' value='female'>여자

@@ -11,7 +11,7 @@ if (!$member[user_id]) {
 $id = $_POST[id];  // 게시판 ID
 $user_id = $_POST[user_id];  // 회원 ID
 $user_name = $_POST[user_name];  // 회원 이름
-$nickname = $_POST[nickname];  // 회원 닉네임
+$nickname = $_POST[nickname];  // 회원 별명
 $title = $_POST[title];  // 게시판 제목
 $content = $_POST[content];  // 게시판 내용
 
